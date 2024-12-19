@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Running Shoes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Product Section */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-card .product-info {
+            padding: 20px;
+        }
+
+        .product-card .product-info h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .product-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-card .description {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .product-card .btn-container {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-outline-warning {
+            background-color: #f1c40f;
+        }
+
+        .btn-outline-danger {
+            background-color: #e74c3c;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Footsteps</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-grid">
+        <div class="product-card">
+            <img src="https://neemans.com/cdn/shop/files/ND-TB-Grey-_WebOptimized_c_afd42113-01db-4754-a8cb-6f2f95e37262_800x.jpg?v=1733919776" alt="Running Shoes">
+            <div class="product-info">
+                <h2>Men's Running Shoes - Grey</h2>
+                <p class="price">Rs. 1200</p>
+                <p class="description">Breathable and durable shoes for optimal performance.</p>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn btn-outline-warning">Add to Cart</a>
+                <a href="#" class="btn btn-outline-danger">Buy Now</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Running Shoes">
+            <div class="product-info">
+                <h2>Men's Running Shoes - Navy</h2>
+                <p class="price">Rs. 1499</p>
+                <p class="description">Lightweight navy blue shoes for everyday runners.</p>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn btn-outline-warning">Add to Cart</a>
+                <a href="#" class="btn btn-outline-danger">Buy Now</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Running Shoes">
+            <div class="product-info">
+                <h2>Men's Running Shoes - Black</h2>
+                <p class="price">Rs. 2999</p>
+                <p class="description">Sleek black shoes with a slip-resistant sole.</p>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn btn-outline-warning">Add to Cart</a>
+                <a href="#" class="btn btn-outline-danger">Buy Now</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/267202/pexels-photo-267202.jpeg" alt="Running Shoes">
+            <div class="product-info">
+                <h2>Men's Running Shoes - White</h2>
+                <p class="price">Rs. 1399</p>
+                <p class="description">Comfortable white shoes with advanced cushioning.</p>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn btn-outline-warning">Add to Cart</a>
+                <a href="#" class="btn btn-outline-danger">Buy Now</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Running Shoes">
+            <div class="product-info">
+                <h2>Men's Running Shoes - Red</h2>
+                <p class="price">Rs. 1799</p>
+                <p class="description">Comfortable white shoes with advanced cushioning.</p>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn btn-outline-warning">Add to Cart</a>
+                <a href="#" class="btn btn-outline-danger">Buy Now</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg" alt="Running Shoes">
+            <div class="product-info">
+                <h2>Men's Running Shoes - Blue</h2>
+                <p class="price">Rs. 1999</p>
+                <p class="description">Comfortable white shoes with advanced cushioning.</p>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn btn-outline-warning">Add to Cart</a>
+                <a href="#" class="btn btn-outline-danger">Buy Now</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://neemans.com/cdn/shop/files/ND-TB-Grey-_WebOptimized_c_afd42113-01db-4754-a8cb-6f2f95e37262_800x.jpg?v=1733919776" alt="Running Shoes">
+            <div class="product-info">
+                <h2>Men's Running Shoes - White</h2>
+                <p class="price">Rs. 1599</p>
+                <p class="description">Comfortable white shoes with advanced cushioning.</p>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn btn-outline-warning">Add to Cart</a>
+                <a href="#" class="btn btn-outline-danger">Buy Now</a>
+            </div>
+           
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Runner's Gear. All rights reserved.</p>
+    </footer>
+</body>
+</html>
